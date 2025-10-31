@@ -18,7 +18,85 @@ main {
   max-width: 1200px;
 }
 
-/* Header */
+/* ################ FORMULARIOS ################ */
+
+/* Contenedor de formularios */
+.form-card {
+  margin: 10rem auto;
+  background-color: #f2f2f2;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 380px;
+}
+
+/* Título de formularios */
+.form-card h2 {
+  text-align: center;
+  color: #333;
+  margin: 0 0 30px 0;
+}
+
+/* Responsividad */
+@media (max-width: 480px) {
+  .form-card {
+    padding: 30px 25px;
+  }
+}
+/* Formulario login y contact */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+/* Inputs, textareas, select, etc. */
+input,
+input,
+textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+/* Efecto al enfocar */
+input:focus,
+textarea:focus {
+  border-color: #7badd3;
+  box-shadow: 0 0 0 3px rgba(123, 173, 211, 0.2);
+}
+
+/* Botones */
+button,
+button {
+  padding: 14px;
+  background-color: #7badd3;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.4s ease, transform 0.2s ease;
+  margin-top: 10px;
+}
+
+/* Hover del botón */
+button:hover {
+  background-color: #ee6fbb;
+  transform: translateY(-2px);
+}
+
+/* Activo del botón */
+button:active {
+  transform: translateY(0);
+}
+
+/* ################## Header ################## */
 .navbar {
   background: rgba(255, 255, 255, 0.9);
   padding: 15px 0;
@@ -45,29 +123,4 @@ main {
 
 .navbar a:hover {
   color: #7badd3;
-}
-
-/* Contenedor de formularios */
-.form-card {
-  margin: 10rem auto;
-  background-color: #f2f2f2;
-  padding: 40px;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  width: 100%;
-  max-width: 380px;
-}
-
-/* Título de formularios */
-.form-card h2 {
-  text-align: center;
-  color: #333;
-  margin: 0 0 30px 0;
-}
-
-/* Responsividad */
-@media (max-width: 480px) {
-  .form-card {
-    padding: 30px 25px;
-  }
 }

@@ -34,34 +34,34 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 }
 ?>
 <div class="form-card">
-<h2>Formulario de Contacto</h2>
+    <h2>Formulario de Contacto</h2>
 
-<?php if (!empty($errores)): ?>
-    <div class="errores">
-        <ul>
-            <?php foreach ($errores as $error): ?>
-                <li><?= htmlspecialchars($error) ?></li>
-            <?php endforeach; ?>
-        </ul>
-    </div>
-<?php endif; ?>
+    <?php if (!empty($errores)): ?>
+        <div class="errores">
+            <ul>
+                <?php foreach ($errores as $error): ?>
+                    <li><?= htmlspecialchars($error) ?></li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+    <?php endif; ?>
 
-<?php if ($exito): ?>
-    <div class="exito"><?= htmlspecialchars($exito) ?></div>
-<?php endif; ?>
+    <?php if ($exito): ?>
+        <div class="exito"><?= htmlspecialchars($exito) ?></div>
+    <?php endif; ?>
 
-<form method="POST" action="contacto.php">
-    <label for="nombre">Nombre completo:</label>
-    <input type="text" id="nombre" name="nombre" value="<?= htmlspecialchars($nombre) ?>">
+    <form method="POST" action="contacto.php">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" value="<?= htmlspecialchars($nombre) ?>">
 
-    <label for="email">Correo electrónico:</label>
-    <input type="email" id="email" name="email" value="<?= htmlspecialchars($email) ?>">
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" value="<?= htmlspecialchars($email) ?>">
 
-    <label for="mensaje">Mensaje:</label>
-    <textarea id="mensaje" name="mensaje" rows="4"><?= htmlspecialchars($mensaje) ?></textarea>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4"><?= htmlspecialchars($mensaje) ?></textarea>
 
-    <button type="submit">Enviar</button>
-</form>
+        <button type="submit">Enviar</button>
+    </form>
 </div>
 <?php
 $content = ob_get_clean();
