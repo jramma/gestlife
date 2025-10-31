@@ -1,0 +1,15 @@
+.errores {
+  background: #ffd1d1;
+  color: #a60000;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 1em;
+}
+
+.exito {
+  background: #d1ffd8;
+  color: #006a1b;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 1em;
+}

@@ -1,0 +1,73 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(40deg, #ee6fbb, #7badd3);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+  padding: 20px;
+  max-width: 1200px;
+}
+
+/* Header */
+.navbar {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #7badd3;
+}
+
+/* Contenedor de formularios */
+.form-card {
+  margin: 10rem auto;
+  background-color: #f2f2f2;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 380px;
+}
+
+/* Título de formularios */
+.form-card h2 {
+  text-align: center;
+  color: #333;
+  margin: 0 0 30px 0;
+}
+
+/* Responsividad */
+@media (max-width: 480px) {
+  .form-card {
+    padding: 30px 25px;
+  }
+}
