@@ -1,0 +1,85 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(40deg, #ee6fbb, #7badd3);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+}
+
+/* Contenedor del formulario */
+.login-container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 380px;
+}
+
+/* Título */
+.login-container h2 {
+  text-align: center;
+  color: #333;
+  margin: 0 0 30px 0;
+}
+
+/* Formulario */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Campos del formulario */
+.login-form input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+/* Efecto al enfocar los inputs */
+.login-form input:focus {
+  border-color: #7badd3;
+  box-shadow: 0 0 0 3px rgba(123, 173, 211, 0.2);
+}
+
+/* Botón */
+.login-form button {
+  padding: 14px;
+  background-color: #7badd3;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.4s ease, transform 0.2s ease;
+  margin-top: 10px;
+}
+
+/* Hover del botón */
+.login-form button:hover {
+  background-color: #ee6fbb;
+  transform: translateY(-2px);
+}
+
+/* Efecto activo del botón */
+.login-form button:active {
+  transform: translateY(0);
+}
+
+/* Responsividad */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 30px 25px;
+  }
+}
